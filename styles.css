@@ -601,3 +601,60 @@ header{
         gap: 1.5rem;
     }
 }
+/* --- Impact Calculator Section --- */
+.impact-calculator {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding: 20px;
+    background: var(--light-green-color);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.calculator-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.impact-calculator .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 300px;
+}
+
+.impact-calculator .input-group label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.impact-calculator .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--green-color);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+#impact-result {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8;
+    background: var(--bg-color);
+    padding: 15px 30px;
+    border-radius: 0.5rem;
+    opacity: 0; /* Starts hidden */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#co2-result, #waste-result {
+    font-weight: 700;
+    color: var(--light-orange-color);
+}
